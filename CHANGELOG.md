@@ -1,36 +1,93 @@
-# Change Log
+# Changelog
 
-## [2.6.0](https://github.com/locp/cassandra/tree/2.6.0) (2017-09-11)
-[Full Changelog](https://github.com/locp/cassandra/compare/2.5.0...2.6.0)
+All notable changes to this project will be documented in this file.
+Each new release typically also includes the latest modulesync defaults.
+These should not affect the functionality of the module.
 
-**Fixed bugs:**
+## [v2.7.2](https://github.com/voxpupuli/puppet-cassandra/tree/v2.7.2) (2018-08-18)
 
-- Unit and acceptance tests are failing that have been successful in the past. [\#397](https://github.com/locp/cassandra/issues/397)
+[Full Changelog](https://github.com/voxpupuli/puppet-cassandra/compare/v2.7.1...v2.7.2)
 
 **Merged pull requests:**
 
-- Implement apache_repo for RedHat [\#396](https://github.com/locp/cassandra/pull/396) ([stijnvdb](https://github.com/stijnvdb))
+- allow puppetlabs/inifile 2.x [\#433](https://github.com/voxpupuli/puppet-cassandra/pull/433) ([bastelfreak](https://github.com/bastelfreak))
 
-## [2.5.0](https://github.com/locp/cassandra/tree/2.5.0) (2017-05-31)
-[Full Changelog](https://github.com/locp/cassandra/compare/2.4.1...2.5.0)
+## [v2.7.1](https://github.com/voxpupuli/puppet-cassandra/tree/v2.7.1) (2018-08-03)
 
-**Implemented enhancements:**
-
-- Integration with github\_changelog\_generator [\#389](https://github.com/locp/cassandra/pull/389) ([dallinb](https://github.com/dallinb))
-
-**Fixed bugs:**
-
-- Tests failing for CentOS 6 on "Create schema for 2.1" [\#392](https://github.com/locp/cassandra/issues/392)
+[Full Changelog](https://github.com/voxpupuli/puppet-cassandra/compare/v2.7.0...v2.7.1)
 
 **Closed issues:**
 
-- Rubocop failing tests since upgrade from 0.48.1 to 0.49.0 [\#391](https://github.com/locp/cassandra/issues/391)
+- Fix / update modules puppetlabs/apt dependencies  [\#426](https://github.com/voxpupuli/puppet-cassandra/issues/426)
 
 **Merged pull requests:**
 
-- Switch to role management instead of user one [\#388](https://github.com/locp/cassandra/pull/388) ([SergK](https://github.com/SergK))
+- allow puppetlabs-apt version 5.x [\#430](https://github.com/voxpupuli/puppet-cassandra/pull/430) ([bastelfreak](https://github.com/bastelfreak))
+- bumping version dependency for puppetlabs/apt [\#429](https://github.com/voxpupuli/puppet-cassandra/pull/429) ([paulseward](https://github.com/paulseward))
+- Remove docker nodesets [\#425](https://github.com/voxpupuli/puppet-cassandra/pull/425) ([bastelfreak](https://github.com/bastelfreak))
+- drop EOL OSs; fix puppet version range [\#423](https://github.com/voxpupuli/puppet-cassandra/pull/423) ([bastelfreak](https://github.com/bastelfreak))
 
-## 2017-04-24 - Release 2.4.1 ([diff](https://github.com/locp/cassandra/compare/2.4.0...2.4.1))
+## [v2.7.0](https://github.com/voxpupuli/puppet-cassandra/tree/v2.7.0) (2018-01-04)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-cassandra/compare/2.6.0...v2.7.0)
+
+**Implemented enhancements:**
+
+- migrate to voxpupuli [\#394](https://github.com/voxpupuli/puppet-cassandra/issues/394)
+- adding paramter to define whether or not to manage the config file at… [\#411](https://github.com/voxpupuli/puppet-cassandra/pull/411) ([zmarois](https://github.com/zmarois))
+- \#395 Adding Red Hat OS [\#396](https://github.com/voxpupuli/puppet-cassandra/pull/396) ([stijnvdb](https://github.com/stijnvdb))
+
+**Closed issues:**
+
+- Review metadata.json and README.md [\#410](https://github.com/voxpupuli/puppet-cassandra/issues/410)
+
+**Merged pull requests:**
+
+- replace validate\_hash with assert\_type [\#415](https://github.com/voxpupuli/puppet-cassandra/pull/415) ([bastelfreak](https://github.com/bastelfreak))
+- regenerate puppet-strings docs [\#414](https://github.com/voxpupuli/puppet-cassandra/pull/414) ([bastelfreak](https://github.com/bastelfreak))
+- Changes towards \#410 \(Review metadata.json and README.md\) [\#412](https://github.com/voxpupuli/puppet-cassandra/pull/412) ([dallinb](https://github.com/dallinb))
+- This project no longer uses CircleCI. [\#408](https://github.com/voxpupuli/puppet-cassandra/pull/408) ([dallinb](https://github.com/dallinb))
+- Fix merge conflicts for PR \#404 [\#405](https://github.com/voxpupuli/puppet-cassandra/pull/405) ([dallinb](https://github.com/dallinb))
+- Release 2.6.0 [\#403](https://github.com/voxpupuli/puppet-cassandra/pull/403) ([dallinb](https://github.com/dallinb))
+- Implement apache\_repo for RedHat [\#400](https://github.com/voxpupuli/puppet-cassandra/pull/400) ([dallinb](https://github.com/dallinb))
+- Cassandra 3.X and Debian 7 clash over GLIBC version. [\#399](https://github.com/voxpupuli/puppet-cassandra/pull/399) ([dallinb](https://github.com/dallinb))
+- Bugfix 397 - Spec tests not working. [\#398](https://github.com/voxpupuli/puppet-cassandra/pull/398) ([dallinb](https://github.com/dallinb))
+
+## [2.6.0](https://github.com/voxpupuli/puppet-cassandra/tree/2.6.0) (2017-09-11)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-cassandra/compare/2.5.0...2.6.0)
+
+**Implemented enhancements:**
+
+- Implement apache\_repo for RedHat [\#395](https://github.com/voxpupuli/puppet-cassandra/issues/395)
+
+**Fixed bugs:**
+
+- Unit and acceptance tests are failing that have been successful in the past. [\#397](https://github.com/voxpupuli/puppet-cassandra/issues/397)
+
+**Closed issues:**
+
+- Release 2.6.0 [\#401](https://github.com/voxpupuli/puppet-cassandra/issues/401)
+
+## [2.5.0](https://github.com/voxpupuli/puppet-cassandra/tree/2.5.0) (2017-05-31)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-cassandra/compare/2.4.1...2.5.0)
+
+**Implemented enhancements:**
+
+- Integration with github\_changelog\_generator [\#389](https://github.com/voxpupuli/puppet-cassandra/pull/389) ([dallinb](https://github.com/dallinb))
+
+**Closed issues:**
+
+- Tests failing for CentOS 6 on "Create schema for 2.1" [\#392](https://github.com/voxpupuli/puppet-cassandra/issues/392)
+- Rubocop failing tests since upgrade from 0.48.1 to 0.49.0 [\#391](https://github.com/voxpupuli/puppet-cassandra/issues/391)
+
+**Merged pull requests:**
+
+- Release 2.5.0 [\#393](https://github.com/voxpupuli/puppet-cassandra/pull/393) ([dallinb](https://github.com/dallinb))
+- Switch to role management instead of user one [\#388](https://github.com/voxpupuli/puppet-cassandra/pull/388) ([SergK](https://github.com/SergK))
+
+## [2.4.1](https://github.com/voxpupuli/puppet-cassandra/compare/2.4.0...2.4.1) (2017-04-24)
 
 ### Summary
 
@@ -41,7 +98,7 @@ A non-functional release of improvements.
 * A refactoring and extension of the acceptance tests.
 * Migrated from version 1.0 to 2.0 of the CircleCI API.
 
-## 2017-03-30 - Release 2.4.0 ([diff](https://github.com/locp/cassandra/compare/2.3.0...2.4.0))
+## [2.4.0](https://github.com/voxpupuli/puppet-cassandra/compare/2.3.0...2.4.0) (2017-03-30)
 
 ### Summary
 
@@ -1147,4 +1204,4 @@ Added more attributes and improved the module metadata.
 An initial release with **VERY** limited options.
 
 
-\* *This Change Log was automatically generated by [github_changelog_generator](https://github.com/skywinder/Github-Changelog-Generator)*
+\* *This Changelog was automatically generated by [github_changelog_generator](https://github.com/github-changelog-generator/github-changelog-generator)*
